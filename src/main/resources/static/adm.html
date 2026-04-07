@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Brinquedos - Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo HappyKids">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categorias.html">Catálogo</a></li>
+                <li class="active"><a href="adm.html">Administração</a></li> 
+                <li><a href="sobre.html">Sobre a equipe</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>HappyKids</h1> <p>Administração :: catálogo de brinquedos</p>
+            </header>
+
+            <section class="form-section">
+                <h2>Novo Brinquedo</h2>
+                <div class="form-grid">
+                    <input type="text" id="descricao" placeholder="Descrição do Brinquedo">
+                    <input type="text" id="categoria" placeholder="Categoria">
+                    <input type="text" id="marca" placeholder="Marca">
+                    <input type="number" id="valor" placeholder="Valor (R$)">
+                    <input type="text" id="imagemUrl" placeholder="URL da Imagem">
+                    <button class="btn-save" onclick="salvar()">SALVAR DADOS</button>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CÓDIGO</th>
+                            <th>DESCRIÇÃO</th>
+                            <th>CATEGORIA</th>
+                            <th>VALOR</th>
+                            <th>AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaBrinquedos">
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
