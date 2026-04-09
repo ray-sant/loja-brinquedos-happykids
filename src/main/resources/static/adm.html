@@ -10,9 +10,7 @@
 
     <div class="container">
         <nav class="sidebar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo HappyKids">
-            </div>
+            <div class="logo"><img src="images/logo.png" alt="Logo HappyKids"></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="categorias.html">Catálogo</a></li>
@@ -29,7 +27,9 @@
             <section class="form-section">
                 <h2 id="tituloFormulario">Novo Brinquedo</h2>
                 <div class="form-grid">
+                    <!-- Campos Ocultos -->
                     <input type="hidden" id="brinquedoId">
+                    <input type="hidden" id="imagemUrl"> 
                     
                     <input type="text" id="codigo" placeholder="Código do Brinquedo">
                     <input type="text" id="descricao" placeholder="Descrição do Brinquedo">
@@ -40,14 +40,19 @@
                     
                     <input type="text" id="marca" placeholder="Marca">
                     <input type="number" id="valor" placeholder="Valor (R$)" step="0.01">
-                    <input type="text" id="imagemUrl" placeholder="URL da Imagem">
+                    
+                    <!-- Campo de Imagem -->
+                    <div style="display: flex; flex-direction: column; gap: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 4px;">
+                        <label style="font-size: 11px; font-weight: bold;">FOTO DO BRINQUEDO:</label>
+                        <input type="file" id="imagemArquivo" accept="image/*">
+                    </div>
                     
                     <div style="grid-column: span 3; display: flex; align-items: center; gap: 10px;">
                         <input type="checkbox" id="destaque" style="width: auto;">
                         <label for="destaque">Destacar na Home Page</label>
                     </div>
 
-                    <textarea id="detalhes" placeholder="Detalhes: Escreva aqui os detalhes do brinquedo..." style="grid-column: span 3; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
+                    <textarea id="detalhes" placeholder="Detalhes do brinquedo..." style="grid-column: span 3; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
 
                     <button class="btn-save" id="btnSalvar" onclick="salvar()">SALVAR DADOS</button>
                     <button class="btn-save" id="btnCancelar" onclick="cancelarEdicao()" style="display: none; background: #95a5a6; grid-column: span 3;">CANCELAR EDIÇÃO</button>
@@ -58,6 +63,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>FOTO</th>
                             <th>CÓDIGO</th>
                             <th>DESCRIÇÃO</th>
                             <th>CATEGORIA</th>
@@ -65,8 +71,7 @@
                             <th>AÇÕES</th>
                         </tr>
                     </thead>
-                    <tbody id="listaBrinquedos">
-                        </tbody>
+                    <tbody id="listaBrinquedos"></tbody>
                 </table>
             </section>
         </main>
