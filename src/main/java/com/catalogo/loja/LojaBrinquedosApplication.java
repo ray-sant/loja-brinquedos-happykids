@@ -87,10 +87,40 @@ public class LojaBrinquedosApplication {
 
 			// --- 3. EQUIPE ---
 			Equipe dev1 = new Equipe();
-			dev1.setNome("Seu Nome Aqui");
-			dev1.setRgm("12345678");
-			dev1.setFoto("images/perfil-dev.png");
+			dev1.setNome("Gustavo Pereira");
+			dev1.setRgm("38932555");
+			dev1.setFoto("images/foto-gustavo.png");
 			equipeRepo.save(dev1);
+			
+			Equipe dev2 = new Equipe();
+			dev2.setNome("Rayssa Santos");
+			dev2.setRgm("39474020");
+			dev2.setFoto("images/foto-rayssa.png");
+			equipeRepo.save(dev2);
+			
+			Equipe dev3 = new Equipe();
+			dev3.setNome("Lucas Carvalho");
+			dev3.setRgm("38076969");
+			dev3.setFoto("images/foto-lucas.png");
+			equipeRepo.save(dev3);
+			
+			Equipe dev4 = new Equipe();
+			dev4.setNome("Giovana Oliveira");
+			dev4.setRgm("38753189");
+			dev4.setFoto("images/foto-giovana.png");
+			equipeRepo.save(dev4);
+			
+			Equipe dev5 = new Equipe();
+			dev5.setNome("Nicholas Ramos");
+			dev5.setRgm("45036721");
+			dev5.setFoto("images/foto-nicholas.png");
+			equipeRepo.save(dev5);
+			
+			Equipe dev6 = new Equipe();
+			dev6.setNome("Daniel Primo");
+			dev6.setRgm("41097131");
+			dev6.setFoto("images/foto-daniel.png");
+			equipeRepo.save(dev6);
 
 			System.out.println("✅ Banco de dados populado com caminhos para a pasta 'images'!");
 		};
