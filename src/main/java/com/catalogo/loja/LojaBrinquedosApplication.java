@@ -121,6 +121,12 @@ public class LojaBrinquedosApplication {
 			dev6.setRgm("41097131");
 			dev6.setFoto("images/foto-daniel.png");
 			equipeRepo.save(dev6);
+			
+			Equipe dev7 = new Equipe();
+			dev7.setNome("Wandson Sousa");
+			dev7.setRgm("37958399");
+			dev7.setFoto("images/foto-wandson.png");
+			equipeRepo.save(dev7);
 
 			System.out.println("✅ Banco de dados populado com caminhos para a pasta 'images'!");
 		};
