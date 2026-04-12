@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8080/api/brinquedos";
-const API_CATEGORIAS = "http://localhost:8080/api/categorias";
+const API_URL = "https://loja-brinquedos-happykids.onrender.com/api/brinquedos";
+const API_CATEGORIAS = "https://loja-brinquedos-happykids.onrender.com/api/categorias";
 
 // Variável global para armazenar a lista na tela de Administração
 let brinquedosAtuais = [];

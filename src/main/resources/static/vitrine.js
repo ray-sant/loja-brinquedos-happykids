@@ -1,6 +1,6 @@
-const API_URL = "http://localhost:8080/api/brinquedos";
-const API_EQUIPE = "http://localhost:8080/api/equipe";
-const API_CATEGORIAS = "http://localhost:8080/api/categorias";
+const API_URL = "https://loja-brinquedos-happykids.onrender.com/api/brinquedos";
+const API_EQUIPE = "https://loja-brinquedos-happykids.onrender.com/api/equipe";
+const API_CATEGORIAS = "https://loja-brinquedos-happykids.onrender.com/api/categorias";
 
 // 1. INICIALIZAÇÃO
 window.onload = () => {
